@@ -1,0 +1,51 @@
+.jumbo-header {
+  width: 100%;
+  padding: 20px;
+  background-image: linear-gradient(#192a56, #6a89cc);
+  font-family: "Montserrat", sans-serif;
+
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 40px;
+  }
+
+  a:hover {
+    color: #f4c724;
+  }
+
+  ul {
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .router-link-active {
+    color: #f4c724;
+    text-decoration: underline;
+  }
+
+  h1 {
+    color: #f4c724;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 3rem;
+  }
+
+  p {
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+  }
+}

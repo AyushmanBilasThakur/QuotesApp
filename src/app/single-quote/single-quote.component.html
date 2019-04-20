@@ -1,0 +1,52 @@
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+  crossorigin="anonymous"
+/>
+<div class="quote-container" (copy)="copyToClipboard()">
+  <div class="mainQuote">
+    <h1 class="quote">"{{ quote.quote }}"</h1>
+    <p class="author">- {{ quote.author }}</p>
+  </div>
+  <div
+    class="actionButtons"
+    [ngStyle]="{
+      'grid-template-columns': author ? 'auto auto' : 'auto auto auto'
+    }"
+  >
+    <button
+      *ngIf="!author"
+      class="like"
+      (click)="like()"
+      [disabled]="already_interacted"
+    >
+      <i class="fas fa-heart"></i>
+      <br />
+      <span class="like-dislike">{{ quote.likes }}</span>
+    </button>
+    <button
+      *ngIf="!author"
+      class="dislike"
+      (click)="dislike()"
+      [disabled]="already_interacted"
+    >
+      <i class="fas fa-heart-broken"></i>
+      <br />
+      <span class="like-dislike">{{ quote.dislikes }}</span>
+    </button>
+    <button (click)="copyToClipboard()" class="tooltip copy">
+      <i class="far fa-clipboard"></i>
+      <div>
+        <span
+          class="tooltiptext"
+          [ngStyle]="{ visibility: copied ? 'visible' : 'hidden' }"
+          >Copied!</span
+        >
+      </div>
+    </button>
+    <button *ngIf="author" class="like" (click)="delete()">
+      <i class="fas fa-trash"></i>
+    </button>
+  </div>
+</div>

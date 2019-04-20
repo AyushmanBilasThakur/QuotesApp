@@ -1,0 +1,108 @@
+.spcImage {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.success {
+  background-color: green;
+  width: 55%;
+  border-radius: 20px;
+  margin: 0 auto;
+  font-weight: bold;
+  color: white;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 10px;
+  transition: all 200ms ease-in-out;
+  p {
+    text-align: center;
+  }
+}
+
+.failure {
+  background-color: red;
+  width: 55%;
+  border-radius: 20px;
+  margin: 0 auto;
+  font-weight: bold;
+  color: white;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 10px;
+  transition: all 200ms ease-in-out;
+  p {
+    text-align: center;
+  }
+}
+
+.success:hover,
+.failure:hover {
+  width: 60%;
+  padding: 25px 15px;
+  font-size: 1.5em;
+  box-shadow: rgba(0, 0, 0, 0.6) 12px 12px 1px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+.formWrapper {
+  margin: 40px 40px;
+}
+.quoteform {
+  margin: 0 auto;
+
+  form {
+    margin: 0 auto;
+    width: 60%;
+    input {
+      border: none;
+      font-size: 1em !important;
+      text-align: center;
+      display: block;
+      width: 100%;
+      margin: 10px;
+      padding: 10px;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+
+.text {
+  text-align: left !important;
+  border-bottom: #192a56 2px solid !important;
+  transition: all 0.5s;
+}
+
+.text:focus {
+  animation: inputHighliter 3s ease 0 forward;
+  border-bottom: #0d1938 2px solid !important;
+}
+
+#submit {
+  color: #192a56;
+  background-color: rgba(0, 0, 0, 0);
+  border: #192a56 2px solid;
+
+  font-weight: bold;
+
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+
+#submit:hover {
+  background-color: #192a56;
+  color: white;
+}
+
+@keyframes inputHighlighter {
+  from {
+    border-bottom: #192a56 0px solid !important;
+  }
+  to {
+    border-bottom: #0d1938 2px solid !important;
+  }
+}

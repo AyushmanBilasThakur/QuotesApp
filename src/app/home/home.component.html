@@ -1,0 +1,37 @@
+<div class="formWrapper">
+  <div class="quoteform">
+    <form form [formGroup]="quoteForm" (ngSubmit)="sendQuote()">
+      <input
+        type="text"
+        formControlName="quote"
+        placeholder="quote"
+        class="text"
+      />
+      <input
+        type="text"
+        formControlName="author"
+        placeholder="author"
+        class="text"
+      />
+      <input type="submit" id="submit" value="Add your Quote" />
+    </form>
+  </div>
+</div>
+
+<div *ngIf="submitted && submissionType" class="success">
+  <p>Successfully submitted Quote</p>
+</div>
+
+<div *ngIf="submitted && !submissionType" class="failure">
+  <p>All the fields are required!</p>
+</div>
+
+<div *ngIf="allQuotes.length == 0">
+  <div class="spcImage"><img src="assets/loader.gif" alt="loading" /></div>
+</div>
+<ul id="{{ q.id }}" *ngFor="let q of allQuotes">
+  <app-single-quote
+    [quote]="q"
+    [reloadFunction]="reloadFunction"
+  ></app-single-quote>
+</ul>

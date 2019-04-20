@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Muli");
+
+div {
+  padding: 20px;
+  margin: 10px 20px;
+}
+h1 {
+  font-family: Muli, sans-serif;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  a {
+    font-size: 2em;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 50px;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.fab,
+.fas {
+  font-size: 1.6em;
+}
+.fa-angular {
+  color: red;
+}
+
+.fa-python {
+  color: green;
+}
+
+.fa-database {
+  color: #777777;
+}
