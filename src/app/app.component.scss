@@ -4,6 +4,14 @@
   margin-top: 20px;
 }
 
+@media screen and (max-width: 750px) {
+  .container {
+    width: 99%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
 .footer {
   position: absolute;
   bottom: auto;
