@@ -22,9 +22,21 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 770px) {
   .quote-container {
+    grid-template-columns: auto;
     grid-template-rows: auto auto;
+    padding: 20px 20px;
+    h1 {
+      font-size: 1.4em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+  .actionButtons {
+    margin-left: 0px;
+    margin-right: 10px;
   }
 }
 

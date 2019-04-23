@@ -1,6 +1,7 @@
 .spcImage {
   width: fit-content;
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 .success {
@@ -10,7 +11,7 @@
   margin: 0 auto;
   font-weight: bold;
   color: white;
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: Arial, Helvetica, sans-serif;
   padding: 20px 10px;
   transition: all 200ms ease-in-out;
@@ -21,12 +22,12 @@
 
 .failure {
   background-color: red;
-  width: 55%;
+  width: 75%;
   border-radius: 20px;
   margin: 0 auto;
   font-weight: bold;
   color: white;
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: Arial, Helvetica, sans-serif;
   padding: 20px 10px;
   transition: all 200ms ease-in-out;
@@ -49,7 +50,7 @@ img {
 }
 
 .formWrapper {
-  margin: 40px 40px;
+  margin: 40px 0px;
 }
 .quoteform {
   margin: 0 auto;
@@ -63,7 +64,7 @@ img {
       text-align: center;
       display: block;
       width: 100%;
-      margin: 10px;
+      margin: 10px 0px;
       padding: 10px;
       outline: none;
       box-shadow: none;
@@ -104,5 +105,12 @@ img {
   }
   to {
     border-bottom: #0d1938 2px solid !important;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  img {
+    width: 50px;
+    height: 50px;
   }
 }
