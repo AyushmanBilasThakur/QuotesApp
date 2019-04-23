@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
 
   local_getquotes() {
     this.qds.getQuotes().subscribe(d => {
-      // this.allQuotes = d.data;
+      this.allQuotes = d.data;
       this.allQuotes = this.allQuotes.sort((q1, q2) => {
         var a = new Date(q1.created_at);
         var b = new Date(q2.created_at);
