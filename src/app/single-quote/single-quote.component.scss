@@ -132,15 +132,26 @@ i {
   }
 
   div {
-    padding: 20px;
+    padding: 10px;
     border-radius: 0 0 20px 20px;
   }
   .author-likes {
     background-color: #6ab04c;
+    font-size: 0em;
+    transition: all 0.2s ease;
   }
 
   .author-dislikes {
     background-color: #333;
     color: white;
+    font-size: 0em;
+    transition: all 0.2s ease;
+  }
+  .author-likes:hover,
+  .author-dislikes:hover {
+    font-size: 1em;
+  }
+  .div:hover {
+    padding: 40px;
   }
 }
