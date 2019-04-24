@@ -50,3 +50,16 @@
     </button>
   </div>
 </div>
+
+<div class="author-stat" *ngIf="author">
+  <div class="inner-div">
+    <div class="author-likes">
+      <i class="fas fa-heart"></i>
+      <h1>{{ quote.likes }}</h1>
+    </div>
+    <div class="author-dislikes">
+      <i class="fas fa-heart-broken"></i>
+      <h1>{{ quote.dislikes }}</h1>
+    </div>
+  </div>
+</div>

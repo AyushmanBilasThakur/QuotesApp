@@ -120,3 +120,27 @@ i {
   position: absolute;
   z-index: 1;
 }
+
+.author-stat {
+  padding-bottom: 30px;
+  margin-top: -20px;
+  .inner-div {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  div {
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+  }
+  .author-likes {
+    background-color: #6ab04c;
+  }
+
+  .author-dislikes {
+    background-color: #333;
+    color: white;
+  }
+}

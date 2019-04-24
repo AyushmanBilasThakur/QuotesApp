@@ -49,7 +49,7 @@ export class SingleQuoteComponent implements OnInit {
     const el = document.createElement("textarea");
     el.value = `"${this.quote.quote}" by ${
       this.quote.author
-    }, Find out more such quotes at @ http://localhost:4200/home`;
+    }, Find out more such quotes at @ https://AyushmanBilasThakur.github.io/QuotesApp/`;
     document.body.appendChild(el);
     el.select();
     document.execCommand("copy");
